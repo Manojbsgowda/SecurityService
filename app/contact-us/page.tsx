@@ -2,7 +2,6 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import WhatsApp from "@/components/WhatsApp";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
