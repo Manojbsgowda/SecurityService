@@ -8,16 +8,16 @@ import Footer from "@/components/Footer";
 
 const testimonials = [
   {
-    name: "Garrett Kite",
-    role: "Business Strategist",
-    companyLogo: "/images/kite-media-logo.png",
+    name: "Manoj B S",
+    role: "Prestige apartments",
+    companyLogo: "/assets/corporate-security.webp",
     feedback:
       "I have used this company's services for years and have nothing but good things to say about it. I like the flexibility and professionalism.",
     rating: 5,
-    image: "/images/garrett-kite.jpg",
+    image: "/assets/manoj-client-review.jpeg",
   },
   {
-    name: "Marion Campbell",
+    name: "Nithin Raj",
     role: "Entrepreneur",
     companyLogo: "/images/izettle-logo.png",
     feedback: "Very well done services that exceeded expectations. Highly professional and easy to work with.",
@@ -85,7 +85,15 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <div key={index} className="w-1/3 flex-shrink-0 p-6 flex flex-col items-center text-center">
-              <RxAvatar size={50} />
+              {testimonial.image ? (
+                <img
+                  src={testimonial.image}
+                  alt={`${testimonial.name}'s picture`}
+                  className="w-16 h-16 rounded-full mb-4"
+                />
+              ) : (
+                <RxAvatar size={50} />
+              )}
               <h3 className="text-lg font-semibold text-gray-800">{testimonial.name}</h3>
               <p className="text-sm text-gray-500 mb-2">{testimonial.role}</p>
               <FaBuilding size={30} />
