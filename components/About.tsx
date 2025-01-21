@@ -1,15 +1,10 @@
 "use client";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import React from "react";
 
 const AboutUsPage: React.FC = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
-
       {/* Service Section */}
       <div className="flex-grow container mx-auto px-4 py-20">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">About Us</h1>
@@ -31,9 +26,6 @@ const AboutUsPage: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };
